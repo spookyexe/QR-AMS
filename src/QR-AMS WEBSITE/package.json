@@ -1,0 +1,25 @@
+{
+  "name": "qr-ams",
+  "version": "1.0.0",
+  "description": "qr-code based attendance monitoring system",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "spookyexe",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jimp": "^0.22.7",
+    "jsqr": "^1.4.0",
+    "node-webcam": "^0.8.1",
+    "qr-image": "^3.2.0",
+    "qrcode-reader": "^1.0.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

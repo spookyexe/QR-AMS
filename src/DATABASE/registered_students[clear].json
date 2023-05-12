@@ -1,0 +1,97 @@
+{
+  "GradeLevels": {
+    "Grade 7": {
+      "Sections": {
+        "Carbon": {
+          "studentNames": []
+        },
+        "Hydrogen": {
+          "studentNames": []
+        },
+        "Nitrogen": {
+          "studentNames": []
+        },
+        "Oxygen": {
+          "studentNames": []
+        }
+      }
+    },
+    "Grade 8": {
+      "Sections": {
+        "Arthropoda": {
+          "studentNames": []
+        },
+        "Chordata": {
+          "studentNames": []
+        },
+        "Mollusca": {
+          "studentNames": []
+        }
+      }
+    },
+    "Grade 9": {
+      "Sections": {
+        "Dalton": {
+          "studentNames": []
+        },
+        "Mendeleev": {
+          "studentNames": []
+        },
+        "Thomson": {
+          "studentNames": []
+        }
+      }
+    },
+    "Grade 10": {
+      "Sections": {
+        "Graviton": {
+          "studentNames": []
+        },
+        "Neutron": {
+          "studentNames": []
+        },
+        "Photon": {
+          "studentNames": []
+        }
+      }
+    },
+    "Grade 11": {
+      "Sections": {
+        "Earth": {
+          "studentNames": []
+        },
+        "Mercury": {
+          "studentNames": []
+        },
+        "Mars": {
+          "studentNames": []
+        },
+        "Saturn": {
+          "studentNames": []
+        },
+        "Venus": {
+          "studentNames": []
+        }
+      }
+    },
+    "Grade 12": {
+      "Sections": {
+        "Aries": {
+          "studentNames": []
+        },
+        "Capricorn": {
+          "studentNames": []
+        },
+        "Gemini": {
+          "studentNames": []
+        },
+        "Pisces": {
+          "studentNames": []
+        },
+        "Scorpio": {
+          "studentNames": []
+        }
+      }
+    }
+  }
+}

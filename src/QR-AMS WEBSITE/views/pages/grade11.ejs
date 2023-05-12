@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>QR-AM SYSTEM | GRADE 11 ATTENDANCE</title>
+
+    <link rel="stylesheet" href="../public/css/attendance.css">
+    <link rel="stylesheet" href="../public/css/nav-bar.css">
+    <link rel="stylesheet" href="../public/css/disclaimer.css">
+    <link rel="stylesheet" href="../public/css/footer.css">
+
+    <script src="../public//js/nav-bar.js" defer></script>
+    <script src="../public//js/disclaimer-mobile.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body> 
+    <div class="disclaimer" data-visible="true" id="disclaimer">
+        <button class="exit-disclaimer" aria-controls="disclaimer"></button>
+        <strong class="disclaimer-text">This Website is for the Fullfillment of the Requirements for Practical Research 1. <a href="#" class="">Learn more</a></strong>
+    </div>
+    
+    <div>
+        <header class="primary-nav-bar flex">
+            <strong class="title">QR-AM SYSTEM</strong>
+            
+            <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"></button>
+            
+            <nav>
+                <ul data-visible="false" class="nav-bar flex" id="primary-nav">
+                    <li><a href="/pages/start.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        
+    </div>
+    
+    <div class="main">
+        
+        <div class="main-container">
+            <div class="levels menu">
+                <ul class="buttons flex">
+                    <li><a href="/attendance/grade7" id="grade7" class="grade7Button levelButtons">Grade 7</a></li>
+                    <li><a href="/attendance/grade8" id="grade8" class="grade8Button levelButtons">Grade 8</a></li>
+                    <li><a href="/attendance/grade9" id="grade9" class="grade9Button levelButtons">Grade 9</a></li>
+                    <li><a href="/attendance/grade10" id="grade10" class="grade10Button levelButtons">Grade 10</a></li>
+                    <li><a href="/attendance/grade11" id="grade11" class="grade11Button levelButtons current-page">Grade 11</a></li>
+                    <li><a href="/attendance/grade12" id="grade12" class="grade12Button levelButtons">Grade 12</a></li>
+                </ul>
+            </div>
+            <div class="sections menu">
+                <ul class="buttons flex">
+                    <li><button id="earth" class="earth sect-button" aria-controls="tableMenu-earth">Earth</button></li>
+                    <li><button id="mercury" class="mercury sect-button" aria-controls="tableMenu-mercury">Mercury</button></li>
+                    <li><button id="mars" class="mars sect-button" aria-controls="tableMenu-mars">Mars</button></li>
+                    <li><button id="saturn" class="saturn sect-button" aria-controls="tableMenu-saturn">Saturn</button></li>
+                    <li><button id="venus" class="venus sect-button" aria-controls="tableMenu-venus">Venus</button></li>
+                </ul>
+            </div>
+            
+            
+            <div id="tableMenu-earth" class="table menu"  data-visible="false" id="table">
+                <H2 class="attendance-title" id="tableHeader">Earth | Attendance</H2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Time Arrived</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (let i = 0; i < grade11Attendance.earth.length; i++)  {%>
+                            <tr>
+                                <td><%= grade11Attendance.earth[i].name %></td>
+                                <td><%= grade11Attendance.earth[i].time %></td>
+                                <td><%= grade11Attendance.earth[i].remarks %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="tableMenu-mercury" class="table menu"  data-visible="false" id="table">
+                <H2 class="attendance-title" id="tableHeader">Mercury | Attendance</H2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Time Arrived</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (let i = 0; i < grade11Attendance.mercury.length; i++)  {%>
+                            <tr>
+                                <td><%= grade11Attendance.mercury[i].name %></td>
+                                <td><%= grade11Attendance.mercury[i].time %></td>
+                                <td><%= grade11Attendance.mercury[i].remarks %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+            <div id="tableMenu-mars" class="table menu"  data-visible="false" id="table">
+                <H2 class="attendance-title" id="tableHeader">Mars | Attendance</H2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Time Arrived</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (let i = 0; i < grade11Attendance.mars.length; i++)  {%>
+                            <tr>
+                                <td><%= grade11Attendance.mars[i].name %></td>
+                                <td><%= grade11Attendance.mars[i].time %></td>
+                                <td><%= grade11Attendance.mars[i].remarks %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+            <div id="tableMenu-saturn" class="table menu"  data-visible="false" id="table">
+                <H2 class="attendance-title" id="tableHeader">Saturn | Attendance</H2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Time Arrived</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (let i = 0; i < grade11Attendance.saturn.length; i++)  {%>
+                            <tr>
+                                <td><%= grade11Attendance.saturn[i].name %></td>
+                                <td><%= grade11Attendance.saturn[i].time %></td>
+                                <td><%= grade11Attendance.saturn[i].remarks %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+            <div id="tableMenu-venus" class="table menu"  data-visible="false" id="table">
+                <H2 class="attendance-title" id="tableHeader">Venus | Attendance</H2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Time Arrived</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (let i = 0; i < grade11Attendance.venus.length; i++)  {%>
+                            <tr>
+                                <td><%= grade11Attendance.venus[i].name %></td>
+                                <td><%= grade11Attendance.venus[i].time %></td>
+                                <td><%= grade11Attendance.venus[i].remarks %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>        
+            
+        </div>
+        
+    </div>
+    
+    <div class="footer flex">
+        
+        <div class="contact-container test">
+            <strong class="title">QR-AM SYSTEM</strong>
+            
+            <ul class="flex">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-github" aria-hidden="true"></i></li>
+            </ul>
+            
+            <button>Sign-In Now!</button>
+        </div>
+        
+        <div class="pages-container test">
+            <ul class="flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        
+        <div class="copyright-container test">
+            <strong class="copyright-title">qr-code attendance monitoring.</strong>
+            <p class="copyright">Copyright © 2023</p>
+            
+            <p class="copyright-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolore illum quo incidunt, optio voluptatem animi temporibus soluta distinctio voluptatum autem error. Placeat, alias odio?</p>
+        </div>
+    </div>
+    
+    <script src="../public/js/start.js"></script>
+</body>
+</html>

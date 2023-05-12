@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.main {
+    min-height: 77vh;
+    width: auto;
+    
+    background-color: #252525;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main-container {
+    min-height: 65vh;
+    height: inherit;
+    width: 90%;
+    margin: auto;
+
+    background-color: rgba(0, 0, 0, 0.271);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.menu {
+    background-color: #0c0c0c70;
+    max-width: 75vw;
+    min-height: 60px;
+    height: auto;
+    width: auto;
+    margin: auto;
+    margin-top: 10px;
+
+    align-items: center;
+    text-align: center;
+    vertical-align: auto;
+    border-radius: 10px;
+
+    padding-top: 12px;
+}
+
+.buttons {
+    list-style: none;
+    justify-content: space-evenly;
+    --gap: 1rem ;
+
+    align-items: center;
+    text-align: center;
+}
+
+.levels .buttons {
+    padding-top: 10px;
+}
+
+.menu .levelButtons, .sect-button{
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    background-color: rgb(0, 136, 169);
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.menu .levelButtons:hover, .sect-button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+    cursor: pointer;
+}
+
+.sections ul li .sect-button {
+    font-size: small;
+}
+
+.menu .sect-button.clicked {
+    background-color: gray;
+}
+
+.table {
+    display: none;
+    padding-bottom: 60px;
+    height: inherit;
+}
+
+.menu .current-page {
+    background-color: gray;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.377);
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+table {
+    color: white;
+    width: 100%;
+}
+
+thead tr {
+    color: rgb(0, 136, 169);
+    font-weight: bolder;
+    font-size: medium;
+}
+
+tbody tr {
+    color: rgba(255, 255, 255, 0.74);
+    font-size: small;
+}
+
+.table[data-visible="true"] {
+    display: block;
+}
+
+
+@media (max-width: 35em) {
+    .buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .sections button {
+        align-items: flex-end;
+    }
+    
+    .menu button {
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: x-small;
+        background-color: rgb(0, 136, 169);
+        border-radius: 10px;
+    }
+
+    .main-container, .menu {
+        margin: 0;
+    }
+}
