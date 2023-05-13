@@ -5,47 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>QR-AM SYSTEM | HOME</title>
+    <title>QR-AM SYSTEM | REGISTER</title>
 
     <link rel="stylesheet" href="../public/css/home.css">
     <link rel="stylesheet" href="../public/css/nav-bar.css">
     <link rel="stylesheet" href="../public/css/disclaimer.css">
     <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../public/css/register.css">
 
     <script src="../public/js/nav-bar.js" defer></script>
     <script src="../public/js/disclaimer-mobile.js" defer></script>
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
 </head>
 <body> 
     <div class="disclaimer" data-visible="true" id="disclaimer">
         <button class="exit-disclaimer" aria-controls="disclaimer"></button>
         <strong class="disclaimer-text">This Website is for the Fullfillment of the Requirements for Practical Research 1. <a href="#" class="">Learn more</a></strong>
     </div>
-
+    
     <div>
         <header class="primary-nav-bar flex">
             <strong class="title">QR-AM SYSTEM</strong>
-
+            
             <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"></button>
-
+            
             <nav>
                 <ul data-visible="false" class="nav-bar flex" id="primary-nav">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/home">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contacts</a></li>
                     <li><a href="/attendance" class="start-button">Let's Get Started!</a></li>
-                    <li><a href="/register" class="sign-in-button">Register</a></li>
                 </ul>
             </nav>
-
+            
         </header>
-
+        
     </div>
-
-    <div class="main"></div>
-
+    
+    <div class="main flex">
+        <div class="register-container">
+            
+            <h2 id="register-title">REGISTER</h2>
+            
+            <select name="grade-level" id="gradeLevel">
+                <option value="" disabled selected>Select Grade Level</option>
+                <option value="grade7">Grade 7</option>
+                <option value="grade8">Grade 8</option>
+                <option value="grade9">Grade 9</option>
+                <option value="grade10">Grade 10</option>
+                <option value="grade11">Grade 11</option>
+                <option value="grade12">Grade 12</option>
+            </select>
+            
+            <select class="sections" data-visible="false" name="sections" id="grade7" >
+                <option value="" disabled selected>Select Section</option>
+                <option value="carbon">Carbon</option>
+                <option value="hydrogen">Hydrogen</option>
+                <option value="nitrogen">Nitrogen</option>
+                <option value="oxygen">Oxygen</option>
+            </select>
+            <select class="sections" data-visible="false" name="sections" id="grade8" >
+                <option value="" disabled selected>Select Section</option>
+                <option value="arthropoda">Arthropoda</option>
+                <option value="chordata">Chordata</option>
+                <option value="mollusca">Mollusca</option>
+            </select>
+            <select class="sections" data-visible="false" name="sections" id="grade9" >
+                <option value="" disabled selected>Select Section</option>
+                <option value="oxygen">Dalton</option>
+                <option value="oxygen">Mendeleev</option>
+                <option value="oxygen">Thomson</option>
+            </select>
+            <select class="sections" data-visible="false" name="sections" id="grade10" >
+                <option value="" disabled selected>Select Section</option>
+                <option value="graviton">Graviton</option>
+                <option value="neutron">Neutron</option>
+                <option value="photon">Photon</option>
+            </select>
+            <select class="sections" data-visible="false" name="sections" id="grade11" >
+                <option value="" disabled selected>Select Section</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+                <option value="mercury">Mercury</option>
+                <option value="saturn">Saturn</option>
+                <option value="venus">Venus</option>
+            </select>
+            <select class="sections" data-visible="false" name="sections" id="grade12" >
+                <option value="" disabled selected>Select Section</option>
+                <option value="aries">Aries</option>
+                <option value="capricorn">Capricorn</option>
+                <option value="gemini">Gemini</option>
+                <option value="pisces">Pisces</option>
+                <option value="scorpio">Scorpio</option>
+            </select>
+            
+            <input type="text" placeholder="Enter Name" name="name" id="studentName" required>
+            <p>All fields must have content to enable button.</p>
+            
+            
+            <button id="registerButton" disabled>REGISTER</button>
+            
+            
+            
+        </div>
+    </div>
+    
     <div class="footer flex">
         
         <div class="contact-container test">
@@ -56,7 +122,7 @@
                 <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                 <li><i class="fa fa-github" aria-hidden="true"></i></li>
             </ul>
-
+            
         <button>Sign-In Now!</button>
         </div>
 
@@ -71,10 +137,11 @@
         <div class="copyright-container test">
             <strong class="copyright-title">qr-code attendance monitoring.</strong>
             <p class="copyright">Copyright © 2023</p>
-
+            
             <p class="copyright-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolore illum quo incidunt, optio voluptatem animi temporibus soluta distinctio voluptatum autem error. Placeat, alias odio?</p>
         </div>
     </div>
     
+    <script src="../public/js/register.js"></script>
 </body>
 </html>
