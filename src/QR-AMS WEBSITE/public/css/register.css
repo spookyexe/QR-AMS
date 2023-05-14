@@ -29,7 +29,7 @@ body {
 .register-container {
     margin: auto;
     width: 400px;
-    height: 60vh;
+    height: 400px;
 
     border: 2px rgba(0, 135, 169, 0.397) solid;
     border-radius: 20px;
@@ -138,9 +138,5 @@ input:hover {
 @media (max-width: 35em) {
     body {
         overflow-y: auto;
-    }
-
-    .register-container {
-        width: 250px;
     }
 }
