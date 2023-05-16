@@ -26,7 +26,13 @@ gradeLevelSelector.addEventListener('change', () => {
     });
     
     registerButton.addEventListener('click', () => {
-      console.log(`${studentName.value} | ${gradeLevelSelector.value} | ${currentSection.value}`);
+      try {
+        console.log(`${studentName.value} | ${gradeLevelSelector.value} | ${currentSection.value}`);
+        window.location.href = '/register/successful'
+
+      } catch {
+        console.log('ERROR')
+      }
     });
   }
 })

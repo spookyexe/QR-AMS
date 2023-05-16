@@ -135,6 +135,13 @@ input:hover {
     display: none;
 }
 
+h2 {
+    color: white;
+    margin: auto;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
 @media (max-width: 35em) {
     body {
         overflow-y: auto;

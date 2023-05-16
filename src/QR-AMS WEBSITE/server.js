@@ -20,8 +20,8 @@ const attendanceData = {}
 
 for (const grade in gradeData) {
   attendanceData[grade] = {};
-  for (const subject of gradeData[grade]) {
-    attendanceData[grade][subject] = require(`${databaseDirectory}/Grade ${grade}/${subject}.json`)
+  for (const section of gradeData[grade]) {
+    attendanceData[grade][section] = require(`${databaseDirectory}/Grade ${grade}/${section}.json`)
   }
 }
 
@@ -35,10 +35,16 @@ app.get('/register', (req, res) => {
   app.use('/public', express.static('public'))
 })
 
+app.get('/register/successful', (req, res) => {
+  res.render('registered.ejs')
+  app.use('/public', express.static('public'))
+})
+
 app.get('/attendance', (req, res) => {
   res.render('attendance.ejs')
   app.use('/public', express.static('public'))
 })
+
 
 for (const grade in attendanceData) {
   app.get(`/attendance/grade${grade}`, (req, res) => {
